@@ -1,0 +1,139 @@
+.reports-page {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.reports-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+}
+
+.summary-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.summary-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.summary-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-data span:first-of-type {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.summary-data strong {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 4px 0;
+}
+
+.trend-up {
+  font-size: 0.75rem;
+  color: var(--success);
+  font-weight: 600;
+}
+
+.trend-down {
+  font-size: 0.75rem;
+  color: var(--danger);
+  font-weight: 600;
+}
+
+.reports-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.report-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.report-row:last-child {
+  border-bottom: none;
+}
+
+.report-main-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.file-icon {
+  width: 48px;
+  height: 48px;
+  background: #F8FAFC;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+}
+
+.report-text h4 {
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+.report-text span {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.report-meta-info {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.file-size {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.btn-icon-round {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  transition: var(--transition);
+}
+
+.btn-icon-round:hover {
+  background: var(--accent);
+  color: var(--primary);
+}
+
+@media (max-width: 1024px) {
+  .reports-summary-grid {
+    grid-template-columns: 1fr;
+  }
+}

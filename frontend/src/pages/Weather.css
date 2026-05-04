@@ -1,0 +1,144 @@
+.weather-page {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.weather-grid-layout {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+}
+
+.current-weather-box {
+  grid-column: span 8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(135deg, white 0%, #F1F5F9 100%);
+}
+
+.weather-now {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.now-main {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.now-icon {
+  color: var(--primary);
+}
+
+.now-temp h2 {
+  font-size: 3rem;
+  margin-bottom: 4px;
+}
+
+.now-temp span {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.now-meta {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.weather-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.w-stat {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.w-stat div {
+  display: flex;
+  flex-direction: column;
+}
+
+.w-stat span {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.w-stat strong {
+  font-size: 0.9375rem;
+}
+
+.impact-box {
+  grid-column: span 4;
+}
+
+.impact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.impact-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  background: #F8FAFC;
+  border-radius: 10px;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.impact-item.warning {
+  background: #FEF3C7;
+  color: #92400E;
+}
+
+.forecast-chart-box {
+  grid-column: span 9;
+}
+
+.pollen-box {
+  grid-column: span 3;
+}
+
+.forecast-daily {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.daily-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.day-name {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.day-value {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+@media (max-width: 1280px) {
+  .current-weather-box, .impact-box, .forecast-chart-box, .pollen-box {
+    grid-column: span 12;
+  }
+}

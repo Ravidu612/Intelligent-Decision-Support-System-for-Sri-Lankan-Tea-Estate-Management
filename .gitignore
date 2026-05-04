@@ -1,0 +1,74 @@
+# =========================
+# 🔹 Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.log
+
+# Virtual Environment
+venv/
+env/
+ENV/
+ai-service/venv/
+
+# =========================
+# 🔹 AI / ML Models (large files)
+# =========================
+*.h5
+*.keras
+*.pkl
+*.joblib
+*.onnx
+
+# Optional: ignore models folder entirely
+models/
+ai-service/models/
+
+# =========================
+# 🔹 Jupyter Notebook
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# 🔹 Node.js / React (if used)
+# =========================
+node_modules/
+build/
+dist/
+.next/
+
+# =========================
+# 🔹 Environment variables
+# =========================
+.env
+.env.local
+.env.development
+.env.production
+
+# =========================
+# 🔹 OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# 🔹 IDE / Editor
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# 🔹 Logs & temp files
+# =========================
+*.tmp
+*.swp
+
+*.pth
+venv/
+backend/uploads/
+__pycache__/
+
+node_modules/
